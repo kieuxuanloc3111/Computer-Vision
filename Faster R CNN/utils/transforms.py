@@ -1,9 +1,6 @@
-import torch
-import torch.nn as nn
-import torchvision
 import math
+import torch
 
-device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 def get_iou(boxes1, boxes2):
     r"""
@@ -109,4 +106,3 @@ def apply_regression_pred_to_anchors_or_proposals(box_transform_pred, anchors_or
         dim=2)
     # pred_boxes -> (num_anchors_or_proposals, num_classes, 4)
     return pred_boxes
-
