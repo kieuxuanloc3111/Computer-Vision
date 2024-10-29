@@ -1,7 +1,7 @@
 import sys
 from pathlib import Path
 sys.path[0] = str(Path(sys.path[0]).parent)
-print(sys.path[0])
+
 from utils.transforms import *
 import torch.nn as nn
 
