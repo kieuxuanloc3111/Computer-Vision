@@ -1,0 +1,11 @@
+image_size: 600             
+train_batch_size: 32        
+test_batch_size: 16         
+learning_rate: 0.01          
+momentum: 0.9                 
+weight_decay: 0.001     
+lr_patience: 3      
+lr_factor: 0.1             
+num_epochs: 20               
+data_path: "C:\\Code\\Giao thong viet nam.v2i.coco" 
+device: "cuda"              
