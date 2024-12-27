@@ -2,7 +2,7 @@ import sys
 from pathlib import Path
 sys.path[0] = str(Path(sys.path[0]).parent)
 
-print(sys.path[0])
+# print(sys.path[0])
 
 import os
 from typing import Dict, Union, List, Tuple
@@ -12,8 +12,8 @@ from torch import nn, Tensor
 from torch.quantization import quantize_dynamic
 
 from utils.misc import PostProcess
-from backbone import *
-from transformer import *
+from DETR.model.backbone import *
+from DETR.model.backbone import *
 
 
 class MLP(nn.Module):
