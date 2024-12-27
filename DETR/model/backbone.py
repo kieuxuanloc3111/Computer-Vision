@@ -3,7 +3,7 @@ from typing import List, Tuple
 import torch
 from torch import nn, Tensor
 
-from embedding import PositionEmbeddingSine
+from DETR.model.embedding import PositionEmbeddingSine
 
 
 class TransitionLayer(nn.Module):
